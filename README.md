@@ -1,13 +1,14 @@
 # snapio
-Load n-body simulation snapshots of NEMO format
 
+A fast IO for N-body simulation snapshots of NEMO format.
 
 ## Examples
 
 Open the snapshots file
 ```
-snap = open_nemo('nbody.nemo', file_meta=False)
+from nemo import open_nemo
 
+snap = open_nemo('nbody.nemo', file_meta=False)
 print(snap.History.data)
 ```
 
